@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        h1 {
+        text-align:center;
+        }
+         input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+<div>
+<form action="/process-payment" method="POST">
+    <h1>Welcome to the Payment Processing API</h1>
+    <p>Please insert the necessary data for processing your payment</p>
+
+    <label for="credit-card-number">Enter the credit card number:</label>
+    <input type="text" id="credit-card-number" name="credit-card-number"><br><br>
+
+    <label for="card-holder">Enter the card holder:</label>
+    <input type="text" id="card-holder" name="card-holder"><br><br>
+
+    <label for="expiration-date">Enter the expiration date of your credit card:</label>
+    <input type="date" id="expiration-date" name="expiration-date"><br><br>
+
+    <label for="security-code">Enter the security code:</label>
+    <input type="string" id="security-code" name="security-code"><br><br>
+
+    <label for="amount">Enter the amount you would like to pay</label>
+    <input type="number" id="amount" name="amount"><br><br>
+
+    <input type="submit" value="Process payment">
+    </form>
+    <form action="/estimate-price" method="POST">
+    <label for="prediction-date">Enter the date for which you want to get the price prediction(the date has to be in the 2011 Q1 - 2011 - Q2 period!)</label>
+    <input type="date" id="prediction-date" name="prediction-date"><br><br>
+
+    <label for="stock-quote">Enter the stock quote</label>
+    <input type="string" id="stock-quote" name="stock-quote"><br><br>
+
+    <input type="submit" value="Estimate price">
+</form>
+</div>
+
+</body>
+</html>
