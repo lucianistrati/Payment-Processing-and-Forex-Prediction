@@ -61,6 +61,3 @@ The `model_training.py` script trains machine learning models to predict stock p
 ## Contributing
 
 Contributions to this project are welcome! If you have any suggestions or improvements, feel free to open an issue or create a pull request.
-
-
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
